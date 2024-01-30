@@ -6,10 +6,10 @@
 />
 
 [![codecov](https://codecov.io/gh/nikoksr/notify/branch/main/graph/badge.svg?token=QDON0KO2WV)](https://codecov.io/gh/nikoksr/notify)
-[![Go Report Card](https://goreportcard.com/badge/github.com/nikoksr/notify)](https://goreportcard.com/report/github.com/nikoksr/notify)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/37fdff3c275c4a72a3a061f2d0ec5553)](https://www.codacy.com/gh/nikoksr/notify/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nikoksr/notify&amp;utm_campaign=Badge_Grade)
+[![Go Report Card](https://goreportcard.com/badge/github.com/buugaaga/go-notify)](https://goreportcard.com/report/github.com/buugaaga/go-notify)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/37fdff3c275c4a72a3a061f2d0ec5553)](https://www.codacy.com/gh/nikoksr/notify/dashboard?utm_source=github.com&utm_medium=referral&utm_content=nikoksr/notify&utm_campaign=Badge_Grade)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b3afd7bf115341995077/maintainability)](https://codeclimate.com/github/nikoksr/notify/maintainability)
-[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat)](https://pkg.go.dev/github.com/nikoksr/notify)
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat)](https://pkg.go.dev/github.com/buugaaga/go-notify)
 
 </div>
 
@@ -19,11 +19,11 @@
 
 ## About <a id="about"></a>
 
-*Notify* was born out of my own need to have my API servers running in production be able to notify me when critical errors occur. Of course, _Notify_ can be used for any other purpose as well. The library is kept as simple as possible for quick integration and ease of use.
+_Notify_ was born out of my own need to have my API servers running in production be able to notify me when critical errors occur. Of course, _Notify_ can be used for any other purpose as well. The library is kept as simple as possible for quick integration and ease of use.
 
 ## Disclaimer <a id="disclaimer"></a>
 
-Any misuse of this library is your own liability and responsibility and cannot be attributed to the authors of this library.  See [license](LICENSE) for more.
+Any misuse of this library is your own liability and responsibility and cannot be attributed to the authors of this library. See [license](LICENSE) for more.
 
 Spamming through the use of this library **may get you permanently banned** on most supported platforms.
 
@@ -32,7 +32,7 @@ Since Notify is highly dependent on the consistency of the supported external se
 ## Install <a id="install"></a>
 
 ```sh
-go get -u github.com/nikoksr/notify
+go get -u github.com/buugaaga/go-notify
 ```
 
 ## Example usage <a id="usage"></a>
@@ -65,20 +65,20 @@ In this example, we use the global `Send()` function. Similar to most logging li
 libraries, we also recommend avoiding the use of global functions as much as possible. Instead, use one of our versatile
 constructor functions to create a new local `Notify` instance and pass it down the stream.
 
-Read the [library docs](https://pkg.go.dev/github.com/nikoksr/notify#section-documentation) for more information.
+Read the [library docs](https://pkg.go.dev/github.com/buugaaga/go-notify#section-documentation) for more information.
 
 ## Contributing <a id="contributing"></a>
 
-Yes, please! Contributions of all kinds are very welcome! Feel free to check our [open issues](https://github.com/nikoksr/notify/issues). Please also take a look at the [contribution guidelines](https://github.com/nikoksr/notify/blob/main/CONTRIBUTING.md).
+Yes, please! Contributions of all kinds are very welcome! Feel free to check our [open issues](https://github.com/buugaaga/go-notify/issues). Please also take a look at the [contribution guidelines](https://github.com/buugaaga/go-notify/blob/main/CONTRIBUTING.md).
 
-> Psst, don't forget to check the list of [missing services](https://github.com/nikoksr/notify/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Aaffects%2Fservices+label%3A%22help+wanted%22+no%3Aassignee) waiting to be added by you or create [a new issue](https://github.com/nikoksr/notify/issues/new?assignees=&labels=affects%2Fservices%2C+good+first+issue%2C+hacktoberfest%2C+help+wanted%2C+type%2Fenhancement%2C+up+for+grabs&template=service-request.md&title=feat%28service%29%3A+Add+%5BSERVICE+NAME%5D+service) if you want a new service to be added.
+> Psst, don't forget to check the list of [missing services](https://github.com/buugaaga/go-notify/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Aaffects%2Fservices+label%3A%22help+wanted%22+no%3Aassignee) waiting to be added by you or create [a new issue](https://github.com/buugaaga/go-notify/issues/new?assignees=&labels=affects%2Fservices%2C+good+first+issue%2C+hacktoberfest%2C+help+wanted%2C+type%2Fenhancement%2C+up+for+grabs&template=service-request.md&title=feat%28service%29%3A+Add+%5BSERVICE+NAME%5D+service) if you want a new service to be added.
 
 ## Supported services <a id="supported_services"></a>
 
-> Click [here](https://github.com/nikoksr/notify/issues/new?assignees=&labels=affects%2Fservices%2C+good+first+issue%2C+hacktoberfest%2C+help+wanted%2C+type%2Fenhancement%2C+up+for+grabs&template=service-request.md&title=feat%28service%29%3A+Add+%5BSERVICE+NAME%5D+service) to request a missing service.
+> Click [here](https://github.com/buugaaga/go-notify/issues/new?assignees=&labels=affects%2Fservices%2C+good+first+issue%2C+hacktoberfest%2C+help+wanted%2C+type%2Fenhancement%2C+up+for+grabs&template=service-request.md&title=feat%28service%29%3A+Add+%5BSERVICE+NAME%5D+service) to request a missing service.
 
 | Service                                                                           | Path                                     | Credits                                                                                         |       Status       |
-|-----------------------------------------------------------------------------------|------------------------------------------|-------------------------------------------------------------------------------------------------|:------------------:|
+| --------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------- | :----------------: |
 | [Amazon SES](https://aws.amazon.com/ses)                                          | [service/amazonses](service/amazonses)   | [aws/aws-sdk-go-v2](https://github.com/aws/aws-sdk-go-v2)                                       | :heavy_check_mark: |
 | [Amazon SNS](https://aws.amazon.com/sns)                                          | [service/amazonsns](service/amazonsns)   | [aws/aws-sdk-go-v2](https://github.com/aws/aws-sdk-go-v2)                                       | :heavy_check_mark: |
 | [Bark](https://apps.apple.com/us/app/bark-customed-notifications/id1403753865)    | [service/bark](service/bark)             | -                                                                                               | :heavy_check_mark: |
@@ -86,7 +86,7 @@ Yes, please! Contributions of all kinds are very welcome! Feel free to check our
 | [Discord](https://discord.com)                                                    | [service/discord](service/discord)       | [bwmarrin/discordgo](https://github.com/bwmarrin/discordgo)                                     | :heavy_check_mark: |
 | [Email](https://wikipedia.org/wiki/Email)                                         | [service/mail](service/mail)             | [jordan-wright/email](https://github.com/jordan-wright/email)                                   | :heavy_check_mark: |
 | [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging)      | [service/fcm](service/fcm)               | [appleboy/go-fcm](https://github.com/appleboy/go-fcm)                                           | :heavy_check_mark: |
- | [Google Chat](https://workspace.google.com/intl/en/products/chat/)                | [service/googlechat](service/googlechat) | [googleapis/google-api-go-client](https://google.golang.org/api/chat/v1)                        | :heavy_check_mark: |
+| [Google Chat](https://workspace.google.com/intl/en/products/chat/)                | [service/googlechat](service/googlechat) | [googleapis/google-api-go-client](https://google.golang.org/api/chat/v1)                        | :heavy_check_mark: |
 | [HTTP](https://wikipedia.org/wiki/Hypertext_Transfer_Protocol)                    | [service/http](service/http)             | -                                                                                               | :heavy_check_mark: |
 | [Lark](https://www.larksuite.com/)                                                | [service/lark](service/lark)             | [go-lark/lark](https://github.com/go-lark/lark)                                                 | :heavy_check_mark: |
 | [Line](https://line.me)                                                           | [service/line](service/line)             | [line/line-bot-sdk-go](https://github.com/line/line-bot-sdk-go)                                 | :heavy_check_mark: |
@@ -125,10 +125,9 @@ The [logo](https://github.com/MariaLetta/free-gophers-pack) was made by the amaz
 
 > Just to clarify, Notify was not inspired by any other project. I created it as a tiny subpackage of a larger project and only later decided to make it a standalone project. In this section I just want to mention other great projects.
 
-  - [containrrr/shoutrrr](https://github.com/containrrr/shoutrrr)
-  - [caronc/apprise](https://github.com/caronc/apprise)
+- [containrrr/shoutrrr](https://github.com/containrrr/shoutrrr)
+- [caronc/apprise](https://github.com/caronc/apprise)
 
 ## Show your support <a id="support"></a>
 
 Please give a ⭐️ if you like the project! It draws more attention to the project, which helps us improve it even faster.
-

@@ -2,7 +2,7 @@
 
 Ensure that you have already navigated to your GOPATH and installed the following packages:
 
-* `go get -u github.com/nikoksr/notify`
+- `go get -u github.com/buugaaga/go-notify`
 
 ## Steps for Mattermost Server
 
@@ -10,7 +10,7 @@ These are general and very high level instructions
 
 1. Create a new Mattermost server / Join existing Mattermost server
 2. Make sure your Username/loginID have the OAuth permission scope(s): `create_post`
-3. Copy the *Channel ID* of the channel you want to post a message to. You can grab the *Channel ID* in channel info. example: *yfgstwuisnshydhd*
+3. Copy the _Channel ID_ of the channel you want to post a message to. You can grab the _Channel ID_ in channel info. example: _yfgstwuisnshydhd_
 4. Now you should be good to use the code below
 
 ## Sample Code
@@ -21,8 +21,8 @@ package main
 import (
     "os"
 
-    "github.com/nikoksr/notify"
-    "github.com/nikoksr/notify/service/mattermost"
+    "github.com/buugaaga/go-notify"
+    "github.com/buugaaga/go-notify/service/mattermost"
 )
 
 func main() {

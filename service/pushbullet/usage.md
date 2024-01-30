@@ -2,8 +2,8 @@
 
 Ensure that you have already navigated to your GOPATH and installed the following packages:
 
-* `go get -u github.com/nikoksr/notify`
-* `go get github.com/cschomburg/go-pushbullet` - You might need this one too
+- `go get -u github.com/buugaaga/go-notify`
+- `go get github.com/cschomburg/go-pushbullet` - You might need this one too
 
 ## Steps for Pushbullet App
 
@@ -11,8 +11,8 @@ These are general and very high level instructions
 
 1. Create a Pushbullet account
 2. Download Pushbullet on any devices which are to receive notifications
-3. Copy your *Access Token* for usage below form https://www.pushbullet.com/#settings
-4. Copy the *Device Nickname* of the device you want to post a message to. See https://www.pushbullet.com/#settings/devices
+3. Copy your _Access Token_ for usage below form https://www.pushbullet.com/#settings
+4. Copy the _Device Nickname_ of the device you want to post a message to. See https://www.pushbullet.com/#settings/devices
 
 ## Sample Code
 
@@ -20,8 +20,8 @@ These are general and very high level instructions
 package main
 
 import (
-    "github.com/nikoksr/notify"
-    "github.com/nikoksr/notify/service/pushbullet"
+    "github.com/buugaaga/go-notify"
+    "github.com/buugaaga/go-notify/service/pushbullet"
 )
 
 func main() {
@@ -50,7 +50,6 @@ func main() {
 }
 ```
 
-
 # Steps for Pushbullet SMS
 
 1. Follow the above instructions, ensuring that Pushbullet is installed on an Android device.
@@ -62,8 +61,8 @@ func main() {
 package main
 
 import (
-    "github.com/nikoksr/notify"
-    "github.com/nikoksr/notify/service/pushbullet"
+    "github.com/buugaaga/go-notify"
+    "github.com/buugaaga/go-notify/service/pushbullet"
 )
 
 func main() {

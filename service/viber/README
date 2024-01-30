@@ -40,8 +40,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/nikoksr/notify"
-	"github.com/nikoksr/notify/service/viber"
+	"github.com/buugaaga/go-notify"
+	"github.com/buugaaga/go-notify/service/viber"
 )
 
 const appKey = "your-viber-token"

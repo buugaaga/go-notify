@@ -1,4 +1,4 @@
-module github.com/nikoksr/notify
+module github.com/buugaaga/go-notify
 
 go 1.19
 

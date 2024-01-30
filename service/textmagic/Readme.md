@@ -7,7 +7,6 @@
 You will need to have a [TextMagic](https://www.textmagic.com/) account and
 `UserName` and `API KEY` from TextMagic.[(api-keys)](https://my.textmagic.com/online/api/rest-api/keys)
 
-
 ```go
 package main
 
@@ -15,8 +14,8 @@ import (
   "context"
   "log"
 
-  "github.com/nikoksr/notify"
-  "github.com/nikoksr/notify/service/textmagic"
+  "github.com/buugaaga/go-notify"
+  "github.com/buugaaga/go-notify/service/textmagic"
 )
 
 func main() {

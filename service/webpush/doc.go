@@ -9,8 +9,8 @@ Usage:
 	    "context"
 	    "log"
 
-	    "github.com/nikoksr/notify"
-	    "github.com/nikoksr/notify/service/webpush"
+	    "github.com/buugaaga/go-notify"
+	    "github.com/buugaaga/go-notify/service/webpush"
 
 	)
 

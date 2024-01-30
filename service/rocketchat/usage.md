@@ -2,22 +2,19 @@
 
 Install notifier using:
 
-* `go get -u github.com/nikoksr/notify`
-
+- `go get -u github.com/buugaaga/go-notify`
 
 ## Steps to follow
 
 These are general and very high level instructions
 
 1. Login to rocketchat and create a personal token `Profile -> My Account -> Security -> Personal Access Tokens`
-2. Copy your *UserID and Token* for usage below
+2. Copy your _UserID and Token_ for usage below
 3. Add the user to channels where you want to send message
-4. Note down *Channel Names* where you want to post a messages. Channel names are  *Case Sensitive*.
+4. Note down _Channel Names_ where you want to post a messages. Channel names are _Case Sensitive_.
 5. Grab the URL for rocketchat server, for this example we are going to user `localhost` and `scheme` is http.
 6. Incase endpoint is exposed on a different port then default on localhost
    you can input the serverURL with port i.e `localhost:3000`
-
-
 
 ## Sample Code
 
@@ -25,8 +22,8 @@ These are general and very high level instructions
 package main
 
 import (
-  "github.com/nikoksr/notify"
-  "github.com/nikoksr/notify/service/rocketchat"
+  "github.com/buugaaga/go-notify"
+  "github.com/buugaaga/go-notify/service/rocketchat"
   "golang.org/x/net/context"
 )
 

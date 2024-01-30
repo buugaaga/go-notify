@@ -2,8 +2,7 @@
 
 Install notifier using:
 
-* `go get -u github.com/nikoksr/notify`
-
+- `go get -u github.com/buugaaga/go-notify`
 
 ## Sample Code
 
@@ -11,8 +10,8 @@ Install notifier using:
 package main
 
 import (
-  "github.com/nikoksr/notify"
-  "github.com/nikoksr/notify/service/line"
+  "github.com/buugaaga/go-notify"
+  "github.com/buugaaga/go-notify/service/line"
   "golang.org/x/net/context"
 )
 
@@ -50,8 +49,8 @@ func main() {
 package main
 
 import (
-  "github.com/nikoksr/notify"
-  "github.com/nikoksr/notify/service/line"
+  "github.com/buugaaga/go-notify"
+  "github.com/buugaaga/go-notify/service/line"
   "golang.org/x/net/context"
 )
 

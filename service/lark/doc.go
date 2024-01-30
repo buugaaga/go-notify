@@ -14,8 +14,8 @@ Usage:
 	  "context"
 	  "log"
 
-	  "github.com/nikoksr/notify"
-	  "github.com/nikoksr/notify/service/lark"
+	  "github.com/buugaaga/go-notify"
+	  "github.com/buugaaga/go-notify/service/lark"
 	)
 
 	const (

@@ -10,25 +10,24 @@ If you need to mock an interface in your tests, follow the next steps:
 
 1. Comment the interface you'd like to mock following the example below
 
-    ```go
-    //go:generate mockery --name=nameOfClient --output=. --case=underscore --inpackage
-    type nameOfClient interface {
-        ...
-    }
-    ```
+   ```go
+   //go:generate mockery --name=nameOfClient --output=. --case=underscore --inpackage
+   type nameOfClient interface {
+       ...
+   }
+   ```
 
-    > Remember to set the `--name` argument accordingly. For real-life implementation examples, check out existing services, for example [fcm](https://github.com/nikoksr/notify/blob/bda5705e4ee1cbf6b02bbb12679ed597334dee51/service/fcm/fcm.go#L27).
+   > Remember to set the `--name` argument accordingly. For real-life implementation examples, check out existing services, for example [fcm](https://github.com/buugaaga/go-notify/blob/bda5705e4ee1cbf6b02bbb12679ed597334dee51/service/fcm/fcm.go#L27).
 
+2. Run `make mock`
 
-2. Run `make mock` 
-
-    > The first time you'll also need to run `make setup` to download the packages required to generate your mocks
+   > The first time you'll also need to run `make setup` to download the packages required to generate your mocks
 
 3. Use the mocked interface in your tests
 
-    ```go
-	mockClient := newMockNameOfClient(t)
-    ```
+   ```go
+   mockClient := newMockNameOfClient(t)
+   ```
 
 ## Commits
 
@@ -45,7 +44,6 @@ We actively welcome your pull requests.
 3. If you've changed or added exported functions or types, document them.
 4. We use [gofumpt](https://github.com/mvdan/gofumpt) to format our code. Don't forget to always run `make fmt` before opening a new PR.
 5. Ensure the test suite passes and the linter doesn't complain (`make ci`).
-
 
 ## Issues
 

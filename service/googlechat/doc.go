@@ -19,8 +19,8 @@ Usage:
 			    "log"
 			    "strings"
 
-			    "github.com/nikoksr/notify"
-			    "github.com/nikoksr/notify/service/googlechat"
+			    "github.com/buugaaga/go-notify"
+			    "github.com/buugaaga/go-notify/service/googlechat"
 			    "google.golang.org/api/chat/v1"
 			    "google.golang.org/api/option"
 			)

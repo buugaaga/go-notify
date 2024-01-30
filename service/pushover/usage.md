@@ -2,15 +2,15 @@
 
 Ensure that you have already navigated to your GOPATH and installed the following packages:
 
-* `go get -u github.com/nikoksr/notify`
+- `go get -u github.com/buugaaga/go-notify`
 
 ## Steps for Pushover App
 
 These are general and very high level instructions
 
 1. Create a new Pushover App by visiting [here](https://pushover.net/apps/build)
-2. Copy your *App token* for usage below
-3. Copy the *User ID* or *Group ID* for where you'd like to send messages
+2. Copy your _App token_ for usage below
+3. Copy the _User ID_ or _Group ID_ for where you'd like to send messages
 4. Now you should be good to use the code below
 
 ## Sample Code
@@ -19,8 +19,8 @@ These are general and very high level instructions
 package main
 
 import (
-    "github.com/nikoksr/notify"
-    "github.com/nikoksr/notify/service/pushover"
+    "github.com/buugaaga/go-notify"
+    "github.com/buugaaga/go-notify/service/pushover"
 )
 
 func main() {

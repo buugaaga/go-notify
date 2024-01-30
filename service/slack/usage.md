@@ -2,8 +2,8 @@
 
 Ensure that you have already navigated to your GOPATH and installed the following packages:
 
-* `go get -u github.com/nikoksr/notify`
-* `go get github.com/slack-go/slack` - You might need this one too
+- `go get -u github.com/buugaaga/go-notify`
+- `go get github.com/slack-go/slack` - You might need this one too
 
 ## Steps for Slack App
 
@@ -11,8 +11,8 @@ These are general and very high level instructions
 
 1. Create a new Slack App
 2. Give your bot/app the following OAuth permission scopes: `chat:write`, `chat:write.public`
-3. Copy your *Bot User OAuth Access Token* for usage below
-4. Copy the *Channel ID* of the channel you want to post a message to. You can grab the *Channel ID* by right clicking a channel and selecting `copy link`. Your *Channel ID* will be in that link.
+3. Copy your _Bot User OAuth Access Token_ for usage below
+4. Copy the _Channel ID_ of the channel you want to post a message to. You can grab the _Channel ID_ by right clicking a channel and selecting `copy link`. Your _Channel ID_ will be in that link.
 5. Now you should be good to use the code below
 
 ## Sample Code
@@ -21,8 +21,8 @@ These are general and very high level instructions
 package main
 
 import (
-    "github.com/nikoksr/notify"
-    "github.com/nikoksr/notify/service/slack"
+    "github.com/buugaaga/go-notify"
+    "github.com/buugaaga/go-notify/service/slack"
 )
 
 func main() {
